@@ -1,4 +1,4 @@
-# 🚀 Freecodecamp Certification : Responsive Web Design  🚀
+# 🚀 Freecodecamp certification : Responsive web design  🚀
 online course : https://www.freecodecamp.org/learn/responsive-web-design/
 ## Stacks :
 <div align="center">
