@@ -1,0 +1,95 @@
+/* color picked from the exemple */
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+header {
+  margin-top:40px;
+}
+
+/* 
+Background-image property was taken from the exemple
+The font family also because i want create a similar look using same font and background
+*/
+body {
+    /* https://www.freecodecamp.org/learn/responsive-web-design/basic-css/import-a-google-font 
+  this line mean we will use Poppins font if the font are loaded otherwise sans-serif
+  */
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+  
+  /*
+  This mean we use the img from the url as our body background but we apply also a linear gradient on top of this image, this gradient start from color 1 and finish color 2. Both color in this cases use rgba.
+    r => 0 to 255 (red)
+    g => 0 to 255 (green)
+    b => 0 to 255 (blue)
+    a => 0 to 1 (alpha => (0 = completely transparent) and (1 = oppacity maximum) )
+  */
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),     url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  /* cover the place available inside body */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+
+header {
+  text-align:center
+}
+
+#survey-form{
+  max-width:640px;
+  padding:20px 40px 20px 40px;
+  margin:0px auto;
+  background-color:var(--color-darkblue-alpha);
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.survey-form_line {
+  display:flex;
+  flex-direction: column;
+  margin:20px;
+  padding-top:10px;
+}
+
+
+label {
+  margin-bottom:10px;
+}
+input {
+  padding:10px;
+  border-radius:5px;
+  border:none;
+}
+select {
+  padding:10px;
+  border-radius:5px;
+  border:none;
+}
+button  {
+  width:calc(100% - calc(40px));
+  margin-left:20px;
+  padding: 10px 0px 10px 0px;
+  color:white;
+  background-color:var(--color-green);
+  border-radius : 5px;
+  border:none;
+}
+p {
+  margin-bottom:10px;
+}
+
+.survey-form_line textarea {
+  height:100px;
+  border-radius:5px;
+  padding:10px;
+}

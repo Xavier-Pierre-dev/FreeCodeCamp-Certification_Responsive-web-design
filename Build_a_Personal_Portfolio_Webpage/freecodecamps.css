@@ -1,0 +1,162 @@
+:root{
+    --bg-color-greyblack: #28282B;
+    --bg-color-white: #f3f3f3;
+    --nbr-column-project-max:4;
+    
+  }
+  
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+      background-color: var(--bg-color-white);
+  }
+  
+  header {
+    display:flex;  
+    width:100%;
+    padding: 5px 0px 5px 0px;
+    align-items:center;
+    justify-content:flex-end;
+    border: 1px solid lightgrey;
+    background-color: var(--bg-color-white);
+    position:fixed;
+    height:45px;
+    box-shadow:0px 10px 5px rgba(0,0,0,0.3);
+  }
+  
+  nav {
+    padding:0px 30px 0px 30px;
+    
+  }
+  
+  nav ul{
+    display:flex;
+  }
+  
+  nav li {
+    list-style:none;
+    margin:30px;
+  }
+  
+  nav  a {
+    text-decoration:none;
+    color: black;
+  
+  }
+  
+  #welcome-section {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-color:var(--bg-color-greyblack);
+  }
+  
+  #welcome-section h1 {
+    color:white;
+    font-size:40px;
+  }
+  
+  
+  
+  #projects {
+    padding:100px 30px 0px 30px;
+    background-color:var(--bg-color-white);
+  }
+  
+  h2 {
+    text-align:center;
+  }
+  
+  
+  #contact {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-color:var(--bg-color-greyblack);
+  }
+  
+  #contact h2 {
+    color:white;
+    font-size:40px;
+  }
+  
+  #contact a {
+    text-decoration:none;
+    color:white;
+  }
+  
+  
+  
+  footer {
+    background:black;
+    color:white;
+    padding:20px;
+    
+  }
+  footer p {
+    text-align:right;
+  }
+  footer a {
+    text-decoration:none;
+    Color:red;
+    font-weight:900;
+  }
+  
+  .project-galerie{
+    display:flex;
+    flex-wrap:wrap;
+    width:80%;
+    /* image width of the image / 4 (multiple of 2) * (--nbr-column-project-max) and the + 100 is here for have some margin beetween element */
+    max-width:calc(calc((960px / 4)) * var(--nbr-column-project-max) + 100px);
+    margin: 30px auto;
+    justify-content:center;
+    
+  }
+  
+  .project-tile {
+    width: calc(960px / 4);
+    margin:10px;
+    overflow:hidden;
+    flex-shrink: 0;
+    background-color:#28282B;
+    border-radius:5px;
+    box-shadow:10px 10px 5px rgba(0,0,0,0.3);
+  }
+  
+  .project-tile:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+  }
+  
+  .project-image {
+    width:100%;
+    height: calc(540px / 4);
+  }
+  
+  .project-tile a {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;   
+  }
+  
+  .project-tile h3{
+    color:#f3f3f3;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    padding:10px;
+  }
+  
+  
+  @media (max-width: 750px){
+    header {
+      justify-content:center;
+    }
+  
+  }
