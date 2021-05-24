@@ -21,7 +21,7 @@ online course : https://www.freecodecamp.org/learn/responsive-web-design/
 * Technical Documentation Page : [Codepen](https://codepen.io/xavier-pierre-dev/pen/qBrrENd "live demo")  
 * Personal Portfolio Webpage : [Codepen](https://codepen.io/xavier-pierre-dev/pen/mdWWoPY "live demo")  
 
-__Note : Live demo on codepen__
+__Note : Live demo on codepen > Change View > full view__
   
 Of course this kind of project seem basic, but in reality they are good for them purpose, learning by practice how to do visual design on webpage using only __html__ and __css__. The class treat also about accessibility, seo purpose, and also __animation__ because yes we can do animation in html/css only and that's allow us to obtain more performance than using a framework for that or javascript. Or performance is one of the important criteria for seo. Minimum html/css should always be prioritize before using javascript or a framework for this purpose. 
 
